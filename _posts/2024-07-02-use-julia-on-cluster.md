@@ -22,7 +22,7 @@ This returned:
 -bash: julia: command not found
 {% endhighlight %}
 
-and didn't activate Julia. So I searched for this issue and got what I want from the website`link: https://researchcomputing.princeton.edu/support/knowledge-base/julia`. 
+and didn't activate Julia. So I searched for this issue and got what I want from the website [`https://researchcomputing.princeton.edu/support/knowledge-base/julia`](https://researchcomputing.princeton.edu/support/knowledge-base/julia). 
 
 One should use the commands below:
 {% highlight ruby %}
