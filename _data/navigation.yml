@@ -2,8 +2,9 @@
 main:
   - title: "About"
     url: /
-  - title: "CV"
+  #- title: "CV"
   - title: "Blogs"
+    url: /_pages/collection-archive.html/
   - title: "Github"
     url: https://github.com/yxzh321
   #- title: "Quick-Start Guide"
