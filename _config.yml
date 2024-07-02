@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "Yaxuan Zhang"
   avatar           : "/assets/images/photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "UGRD student\n **@Nankai University**."
-  location         : "Tianjin, China"
+  bio              : "MSc student **@Ludwig Maximilian University of Munich**."
+  location         : "Munich, Germany"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yaxuanzh@mail.nankai.edu.cn"
+      url: "mailto:yaxuanzh321@gmail.com"
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
