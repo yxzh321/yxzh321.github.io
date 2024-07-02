@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Yaxuan Zhang"
   avatar           : "/assets/images/photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "MSc student **@Ludwig Maximilian University of Munich**."
+  bio              : "MSc student **@LMU**."
   location         : "Munich, Germany"
   email            :
   links:
