@@ -10,7 +10,7 @@ tags:
 ---
 
 I wanted to use Julia on computing clusters with Jupyterhub at LMU. So I first checked if Julia is installed using:
-{% highlight console %}
+{% highlight shell %}
 pip show julia
 {% endhighlight %}
 which gave me the info about the installed Julia. But when I run:
