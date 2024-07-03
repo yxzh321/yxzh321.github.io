@@ -33,3 +33,55 @@ which will show available Julia versions with their path. Then run:
 module load julia/1.x.x # version you want
 {% endhighlight %}
 will start the Julia interactive session.
+
+## Install Julia kernel for JupyterNotebook
+
+{% highlight julia %}
+julia> # start package manager by pressing ] key
+(@v1.10) pkg> add IJulia
+(@v1.10) pkg> # leave package manager by pressing backspace/delete
+julia> using IJulia
+julia> installkernel("Julia")
+{% endhighlight %}
+
+## Work with Environment[^ref1]
+
+This is similar to creating python virtualenv which is necessary for working with your own projects and environments on clusters.
+
+When you first creat a project/env:
+{% highlight julia %}
+(@v1.10) pkg> activate <YourProject>
+(YourProject) pkg> st
+    Status `~/YourProject/Project.toml` (empty project)
+(YourProject) pkg> add Plots # add pkgs you want
+(YourProject) pkg> activate  # leave the environment, then you go back to the default environment
+(@v1.10) pkg>
+{% endhighlight %}
+
+When you already have the project/env:
+{% highlight julia %}
+cd <YourPathToYourProject>/<YourProject>
+julia --project=.
+julia> # press ]
+(YourProject) pkg>
+{% endhighlight %}
+or:
+{% highlight julia %}
+julia
+julia> # press ;
+shell> cd <YourPathToYourProject>/<YourProject>
+shell> # press backspace and then press ]
+(@v1.10) pkg> activate .
+(YourProject) pkg>
+{% endhighlight %}
+
+## Add a additional Julia kernel[^ref2]
+
+{% highlight julia %}
+(YourProject) pkg>
+julia> IJulia.installkernel("Julia YourProjectEnv", "--project=$(Base.active_project())")
+{% endhighlight %}
+The Launcher now has a new icon for starting a new jupyter notebook with "Julia YourProjectEnv".
+
+[^ref1]: https://pkgdocs.julialang.org/v1/environments/
+[^ref2]: https://julialang.github.io/IJulia.jl/stable/manual/usage/
