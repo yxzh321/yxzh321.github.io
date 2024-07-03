@@ -58,7 +58,7 @@ When you first creat a project/env:
 (@v1.10) pkg>
 {% endhighlight %}
 
-When you already have the project/env:
+When you already have the project/env[^ref2]:
 {% highlight julia %}
 cd <YourPathToYourProject>/<YourProject>
 julia --project=.
@@ -75,7 +75,7 @@ shell> # press backspace and then press ]
 (YourProject) pkg>
 {% endhighlight %}
 
-## Add a additional Julia kernel[^ref2]
+## Add an additional Julia kernel[^ref3]
 
 {% highlight julia %}
 (YourProject) pkg>
@@ -84,4 +84,6 @@ julia> IJulia.installkernel("Julia YourProjectEnv", "--project=$(Base.active_pro
 The Launcher now has a new icon for starting a new jupyter notebook with "Julia YourProjectEnv".
 
 [^ref1]: https://pkgdocs.julialang.org/v1/environments/
-[^ref2]: https://julialang.github.io/IJulia.jl/stable/manual/usage/
+[^ref2]: https://towardsdatascience.com/how-to-setup-project-environments-in-julia-ec8ae73afe9c
+[^ref3]: https://julialang.github.io/IJulia.jl/stable/manual/usage/
+[^ref4]: https://researchcomputing.princeton.edu/support/knowledge-base/julia
