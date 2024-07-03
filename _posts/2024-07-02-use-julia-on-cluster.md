@@ -9,27 +9,27 @@ tags:
   - tutorial
 ---
 
-I wanted to use Julia on computing clusters with Jupyterhub at LMU. I checked if Julia is installed using:
-{% highlight ruby %}
+I wanted to use Julia on computing clusters with Jupyterhub at LMU. So I first checked if Julia is installed using:
+{% highlight console %}
 pip show julia
 {% endhighlight %}
 which gave me the info about the installed Julia. But when I run:
-{% highlight ruby %}
+{% highlight julia %}
 julia
 {% endhighlight %}
 This returned: 
-{% highlight ruby %}
+{% highlight console %}
 -bash: julia: command not found
 {% endhighlight %}
 
 and didn't activate Julia. So I searched for this issue and got what I want from the website [`https://researchcomputing.princeton.edu/support/knowledge-base/julia`](https://researchcomputing.princeton.edu/support/knowledge-base/julia). 
 
 One should use the commands below:
-{% highlight ruby %}
+{% highlight console %}
 module avail julia
 {% endhighlight %}
-which will should show available Julia versions with their path. Then run:
-{% highlight ruby %}
+which will show available Julia versions with their path. Then run:
+{% highlight console %}
 module load julia/1.x.x # version you want
 {% endhighlight %}
 will start the Julia interactive session.

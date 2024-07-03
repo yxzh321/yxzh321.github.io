@@ -10,7 +10,7 @@ tags:
 ---
 
 It has been more than a year since I last updated GitHub. When I pushed changes to remote repo, I got error:
-{% highlight ruby %}
+{% highlight console %}
 git push -u origin master
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -21,17 +21,17 @@ and the repository exists.
 and after some time, I found that it was because the SSH key had expired.
 
 The solution is as follows if you already set SSH key in your device.[^sol1] Run in command line(git bash window):
-{% highlight ruby %}
+{% highlight console %}
 ls -al ~/.ssh # check if you set SSH key
 {% endhighlight %}
 which should shows several files including _id\_rsa_ and _id\_rsa.pub_. Then run:
-{% highlight ruby %}
+{% highlight console %}
 cat ~/.ssh/id_rsa.pub
 {% endhighlight %}
 copy the contents starting from _ssh-rsa_ and paste it into your GitHub SSH keys setting.
 
 If both your device and GitHub account have the SSH key but your permissioin was denied, then try the solution below:
-{% highlight ruby %}
+{% highlight console %}
 ssh-agent bash
 ssh-add ~/.ssh/id_rsa
 {% endhighlight %}
