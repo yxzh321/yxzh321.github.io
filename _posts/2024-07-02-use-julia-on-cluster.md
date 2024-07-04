@@ -22,7 +22,7 @@ This returned:
 -bash: julia: command not found
 {% endhighlight %}
 
-and didn't activate Julia. So I searched for this issue and got what I want from the website [`https://researchcomputing.princeton.edu/support/knowledge-base/julia`](https://researchcomputing.princeton.edu/support/knowledge-base/julia). 
+and didn't activate Julia. So I searched for this issue and got what I want from the website [here](https://researchcomputing.princeton.edu/support/knowledge-base/julia).[^ref4] 
 
 One should use the commands below:
 {% highlight console %}
@@ -31,6 +31,7 @@ module avail julia
 which will show available Julia versions with their path. Then run:
 {% highlight console %}
 module load julia/1.x.x # version you want
+julia # type julia
 {% endhighlight %}
 will start the Julia interactive session.
 
@@ -83,7 +84,7 @@ julia> IJulia.installkernel("Julia YourProjectEnv", "--project=$(Base.active_pro
 {% endhighlight %}
 The Launcher now has a new icon for starting a new jupyter notebook with "Julia YourProjectEnv".
 
+[^ref4]: https://researchcomputing.princeton.edu/support/knowledge-base/julia
 [^ref1]: https://pkgdocs.julialang.org/v1/environments/
 [^ref2]: https://towardsdatascience.com/how-to-setup-project-environments-in-julia-ec8ae73afe9c
 [^ref3]: https://julialang.github.io/IJulia.jl/stable/manual/usage/
-[^ref4]: https://researchcomputing.princeton.edu/support/knowledge-base/julia
