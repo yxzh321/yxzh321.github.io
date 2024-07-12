@@ -47,7 +47,7 @@ julia> using CUDA; CUDA.set_runtime_version!(v"11.7")
 I got the same error but with additional info at the end:
 {% highlight julia %}
 [ Info: Configure the active project to use CUDA 11.7; please re-start Julia for this to take effect.
-{% endhighlight %}.
+{% endhighlight %}
 
 At last, I restarted Julia and typed 'using CUDA' again. Then the pkg precompiled successfully.
 
