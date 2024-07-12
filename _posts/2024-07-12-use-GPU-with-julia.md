@@ -32,7 +32,7 @@ I wanted to use Julia package [CUDA.jl](https://cuda.juliagpu.org/stable/install
 So I searched for this issue and got what I want from [here](https://discourse.julialang.org/t/cuda-could-not-find-an-appropiate-cuda-runtime-to-use/97201/3).[^ref1] 
 
 For the same case as mine, one should first check the CUDA version number of your device by running nvidia-smi in BASH and/or using nvcc --version. For me, I used the latter and got
-{% highlight bash %}
+{% highlight shell %}
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2022 NVIDIA Corporation
 Built on Tue_May__3_18:49:52_PDT_2022
