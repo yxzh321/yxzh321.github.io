@@ -10,7 +10,7 @@ tags:
 ---
 
 I wanted to use Julia package [CUDA.jl](https://cuda.juliagpu.org/stable/installation/overview/) on computing clusters. But when I precompile the pkg, I got:
-{% highlight julia %}
+{% highlight shell %}
 Error: CUDA.jl could not find an appropriate CUDA runtime to use.
 This can have several reasons:
 * you are using an unsupported platform: this version of CUDA.jl
@@ -44,7 +44,7 @@ Then I run:
 julia> using CUDA; CUDA.set_runtime_version!(v"11.7")
 {% endhighlight %}
 I got the same error but with additional info at the end:
-{% highlight julia %}
+{% highlight shell %}
 Info: Configure the active project to use CUDA 11.7; please re-start Julia for this to take effect.
 {% endhighlight %}
 
