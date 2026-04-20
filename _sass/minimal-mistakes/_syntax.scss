@@ -20,6 +20,25 @@ figure.highlight {
   }
 }
 
+.copy-code-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0.25em 0.6em;
+  color: $base05;
+  background: mix($base00, $base02, 35%);
+  border: 1px solid $base03;
+  border-radius: $border-radius;
+  font-family: $global-font-family;
+  font-size: $type-size-7;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.copy-code-button:hover {
+  background: $base02;
+}
+
 .highlight table {
   margin-bottom: 0;
   font-size: 1em;
